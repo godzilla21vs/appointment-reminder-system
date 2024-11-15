@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h5>Connectez-vous</h5>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Se connecter</button>
+        </form>
+        <p>Vous n'avez pas encore de compte ? <a href="register/">Inscription</a></p>
+    </div>
+    <footer>
+        <p>&copy; bana 2024</p>
+    </footer>
+</body>
+</html>
